@@ -1,0 +1,244 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#00588f;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+}
+
+.topo{
+    background:#00588f;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 80px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    color:white;
+}
+
+.logo img{
+    width:200px;
+}
+
+.logo h2{
+    font-size:34px;
+}
+
+.logo span{
+    font-size:16px;
+    vertical-align:super;
+}
+
+nav a{
+    align-items: center;
+    text-decoration:none;
+    background:#ffbf00;
+    color:white;
+    padding:10px 25px;
+
+    border-radius:20px;
+    font-size:22px;
+}
+
+nav a:hover{
+    background:#f0a500;
+}
+
+.barra-acessibilidade{
+    background:#00588f;
+    height:40px;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:30px;
+}
+
+.barra-acessibilidade button{
+    margin-left:8px;
+    border:none;
+    background-color:#fdfeff;
+    color:black;
+    border-radius:15px;
+    padding:4px 10px;
+    cursor:pointer;
+}
+
+/* BANNER */
+
+.banner{
+    height:640px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    
+
+    
+}
+
+.texto h1{
+    color:white;
+    font-size:70px;
+    text-transform:uppercase;
+    line-height:1.1;
+}
+
+.texto button{
+justify-content: center;
+    margin-top:40px;
+    background:#ffbf00;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    font-size:28px;
+    border-radius:35px;
+    cursor:pointer;
+}
+
+.imagem img{
+    width: 100%;
+    height: 100%;
+
+    background:#d9d9d9;
+
+    display:flex;
+    justify-content:start;
+    border-radius:10px;
+}
+
+.imagem h2{
+    color:#555;
+    font-size:45px;
+    font-weight:bold;
+}
+
+.avaliacoes {
+    background-color: white;
+    width: 100%;
+    min-height: 540px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding: 60px 20px;
+}
+
+.card {
+    width: 232px;
+    height: 343px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 48px 22px 20px;
+
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
+
+    text-align: center;
+}
+
+.usuario {
+    width: 40px;
+    height: 42px;
+
+    margin-bottom: 30px;
+
+    position: relative;
+}
+
+.cabeca {
+    width: 20px;
+    height: 20px;
+
+    background-color: #000;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.corpo {
+    width: 34px;
+    height: 17px;
+
+    background-color: #000;
+
+    border-radius: 20px 20px 3px 3px;
+
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 12px;
+
+    color: #111;
+}
+
+.estrelas {
+    color: #f5a900;
+
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    margin-bottom: 22px;
+}
+
+.estrelas .cinza {
+    color: #d9d9d9;
+}
+
+.card p {
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #111;
+
+    max-width: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+
+    .avaliacoes {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 467px) {
+
+    .card {
+        width: 90%;
+    }
+}
