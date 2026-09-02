@@ -1,0 +1,308 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#FFFFFF;
+    color:#333;
+    line-height:1.6;
+}
+
+/* CABEÇALHO */
+
+header{
+    background:#0A73B8;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav li{
+    margin-left:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFC107;
+}
+
+/* BANNER */
+
+.banner{
+    background:#0A73B8;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
+
+.banner h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.banner p{
+    font-size:20px;
+    max-width:650px;
+    margin:auto;
+}
+
+.banner button{
+    margin-top:30px;
+    padding:14px 35px;
+    border:none;
+    border-radius:30px;
+    background:#FFC107;
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.banner button:hover{
+    background:#e6aa00;
+}
+
+/* CARDS */
+
+.cards{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    flex:1;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.card h3{
+    color:#0A73B8;
+    margin-bottom:15px;
+}
+
+/* SEÇÕES */
+
+.sobre,
+.beneficios,
+.doacao,
+.parceiro,
+.parceiros{
+    width:85%;
+    margin:50px auto;
+}
+
+.sobre h2,
+.beneficios h2,
+.doacao h2,
+.parceiros h2{
+    color:#0A73B8;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.sobre p{
+    font-size:18px;
+}
+
+/* BENEFÍCIOS */
+
+.beneficios ul{
+    list-style:none;
+}
+
+.beneficios li{
+    margin:12px 0;
+    font-size:18px;
+}
+
+/* COMO DOAR */
+
+.doacao{
+    background:#0A73B8;
+    color:white;
+    padding:40px;
+    border-radius:15px;
+}
+
+.doacao ol{
+    margin-left:20px;
+    margin-bottom:30px;
+}
+
+.doacao li{
+    margin-bottom:10px;
+}
+
+.btn-doar{
+    padding:15px 40px;
+    border:none;
+    border-radius:30px;
+    background:#FFC107;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-doar:hover{
+    background:#e6aa00;
+}
+
+/* PARCEIROS */
+
+/* Container principal (fundo amarelo) */
+.parceiros {
+  background-color: #f2bd1d; /* Tom de amarelo aproximado da imagem */
+  padding: 40px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+      border-radius:15px;
+
+}
+
+/* Título */
+.parceiros h2 {
+  color: #ffffff;
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Alinhamento dos círculos */
+.logos {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Alinha verticalmente no centro */
+  gap: 30px;               /* Espaçamento entre os círculos */
+  flex-wrap: wrap;         /* Quebra de linha automática em telas menores */
+}
+
+/* Estrutura dos círculos brancos */
+.parceiro {
+  background-color: #FFFFFF
+;
+  width: 270px;            /* Largura do círculo */
+  height: 270px;           /* Altura idêntica à largura para manter redondo */
+  border-radius: 50%;      /* Deixa o elemento perfeitamente circular */
+  display: flex;
+  justify-content: center; /* Centraliza a logo dentro do círculo */
+  align-items: center;     
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra leve opcional */
+}
+
+/* Ajuste das imagens/logos dentro dos círculos */
+.logos .parceiro img {
+  width: 190px;         /* Controla o tamanho máximo da logo */
+  height: 190px;        
+  object-fit: contain;     /* Garante que a imagem não distorça */
+}
+
+/* RODAPÉ */
+
+footer { 
+  background: #FFFFFF; 
+  color: black; 
+  padding: 10px;
+  margin: 100px;
+} 
+
+/* Reduzi o padding exagerado que estava empurrando os elementos para baixo */
+footer p { 
+  margin-bottom: 10px; 
+  font-size: 24px; /* Ajustado para um tamanho mais proporcional */
+  color: #333;
+} 
+
+.fimdalogo { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-end; /* Alinha a logo e os direitos pela base */
+  margin-top: 20px;
+} 
+
+/* Controla o tamanho exato da sua imagem */
+.fimdalogo img { 
+  width: 300px; /* Ajuste aqui o tamanho da logo se quiser maior ou menor */
+  height: auto; 
+} 
+
+/* Corrigido o nome da classe para bater com o HTML */
+.logoDireitos { 
+  text-align: right; 
+} 
+
+.logoDireitos p { 
+  margin: 4px 0; 
+  font-size: 22px; /* Tamanho do texto dos direitos autorais */
+  color: #c0c0c0;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+        margin-top:15px;
+    }
+
+    nav li{
+        margin:10px 0;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .banner h1{
+        font-size:36px;
+    }
+
+    .banner p{
+        font-size:18px;
+    }
+
+    .logos{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .parceiro{
+        width:140px;
+        height:140px;
+    }
+
+}
